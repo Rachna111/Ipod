@@ -1,13 +1,219 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{background-color: #2e2e2e;}
+
+
+/*.screen img{*/
+/*    width:260px;*/
+/*    height: 100%;*/
+/*}*/
+
+.navigator{
+    width: 260px;
+    height: 230px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#keys{
+    width: 210px;
+    height: 210px;
+    background: white;
+    margin: 10px auto;
+    overflow: hidden;
+    /*radius*/
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    /*shadow*/
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.keys:hover{
+    -webkit-box-shadow: 0px 0px 22px 3px rgba(0,166,255,0.32);
+    -moz-box-shadow: 0px 0px 22px 3px rgba(0,166,255,0.32);
+    box-shadow: 0px 0px 22px 3px rgba(0,166,255,0.32);
+}
+
+
+.menu-btn{
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 107px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 16px;
+    color: gray;
+}
+
+.menu-btn:hover{
+    color: #00a6ff;
+    /* duration / speed */
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.fwd{
+    width: 22px;
+    position: absolute;
+    top: 103px;
+    left: 204px;
+}
+
+img.fwd{
+    /*filter*/
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    /* duration / speed */
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+img.fwd:hover{
+    /*filter*/
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    /* duration / speed */
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+.bkd{
+    width: 22px;
+    position: absolute;
+    top: 103px;
+    left: 37px;
+}
+
+img.bkd{
+    /*filter*/
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    /* duration / speed */
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+img.bkd:hover{
+    /*filter*/
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+
+.play-pause{
+    width: 28px;
+    position: absolute;
+    top: 182px;
+    left: 116px;
+}
+
+img.play-pause{
+    /*filter*/
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+}
+
+
+img.play-pause:hover{
+    /*filter*/
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+
+
+.play{
+    width: 100px;
+    height: 100px;
+    background: #f0f0f0;
+    margin: 54px auto;
+    border-radius: 100%;
+    /*shadow*/
+    -webkit-box-shadow: inset 0px -2px 14px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px -2px 14px -1px rgba(0,0,0,0.3);
+    box-shadow: inset 0px -2px 14px -1px rgba(0,0,0,0.3);
+}
+
+.click{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    position: relative;
+    border-radius: 100%;
+    top: -154px;
+    left: 55px;
+}
+
+.icon img{
+    width: 12px;
+}
+
+/*.icon{*/
+/*    margin-left: 10px;*/
+/*}*/
+
+.rotate{
+    height: inherit;
+    width: inherit;
+    background-color: transparent;
+    position: absolute;
+}
+
+.options{
+    height: 74%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+ .icon img {
+     width: 12px;
+     color: white;
+     filter: invert(1);
+     margin-left: 5%;
+     position: relative;
+     top: 2px;
+
+
+ }
+
+.selected {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 9px black;
 }
